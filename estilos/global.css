@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #CBC5EA, #EAEAEA);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#celular {
+    position: absolute;
+    background-color: #73628A;
+    top: 50%;
+    left: 50%;
+    
+    width: 250px;
+    height: 650px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    transform: translate(-50%,-50%);
+
+    transition: .3s;
+}
+
+#img {
+    background: url(../img/metal.jpg) left bottom no-repeat;
+    height: 300px;
+    background-size: cover;
+    display: block;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1, p {
+    text-align: center;
+}
+
+div.campo {
+    background-color: aqua;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+
+}
+
+span {
+    transform: translateY(5px);
+}
+
+input {
+    border-radius: 5px;
+    width: calc(100% - 30px);
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    background-color: #313D5A;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    color: #EAEAEA;
+}
+
+a {
+    display: block;
+    background-color: #183642;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #EAEAEA;
+    font-size: 1em;
+    height: 40px;
+}

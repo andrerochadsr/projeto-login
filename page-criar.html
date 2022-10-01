@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/telas.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Cadastro</title>
+    <style>
+        #celular {height: 700px;}
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            #celular {height: 510px;}
+            #formulario {transform: translateY(20px);}
+        }
+
+        @media screen and (min-width:992px) {
+            #celular {height: 600px;}
+            #formulario {transform: translateY(50px);}
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <section id="celular">
+            <div id="img"></div>
+            <div id="formulario">
+                <h1>Criar nova conta</h1>
+                <p>Digite seus dados abaixo.</p>
+                <form action="index.html" method="post" target="_blank">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="text" name="nome" id="inome" required minlength="8" placeholder="Nome Completo">
+                        <label for="inome">nome</label>
+
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">cake</span>
+                        <input type="date" name="nascimento" id="inascimento" placeholder="Data de nascimento">
+                        <label for="inascimento">data de nascimento</label>
+
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" required minlength="8" maxlength="35" placeholder="Email">
+                        <label for="iemail">email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="30" placeholder="Senha">
+                        <label for="isenha"></label>
+
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="30" placeholder="Confirmar Senha">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="Criar">
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
